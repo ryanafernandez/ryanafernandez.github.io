@@ -1,5 +1,4 @@
 import React from "react";
-import { Container,  List } from "semantic-ui-react";
 
 import './App.css';
 import Header from './components/Header';
@@ -10,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="portfolio-app">
-      <Navigation />
+      {/* <Navigation /> */}
       <Header />
       <Project />
       <Footer />

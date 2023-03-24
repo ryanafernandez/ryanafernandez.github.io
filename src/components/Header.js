@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink } from "react-router-dom"
 
 function Header() {
     return (
@@ -8,16 +9,16 @@ function Header() {
             </div>
             <ul className='navigation'>
                 <li className='nav-item'>
-                    <a>About</a>
+                    <NavLink exact to="/">About</NavLink>
                 </li>
                 <li className='nav-item'>
-                    <a>Projects</a>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
                 </li>
                 <li className='nav-item'>
-                    <a>Contact</a>
+                    <NavLink to="/contact">Contact</NavLink>
                 </li>
                 <li className='nav-item'>
-                    <a>Resume</a>
+                    <NavLink to="/resume">Resume</NavLink>
                 </li>
             </ul>
         </header>

@@ -1,52 +1,36 @@
 import React from 'react';
+import { Icon } from 'semantic-ui-react';
+
+import { projectData } from '../data/projectData';
 
 function Portfolio() {
-
     return (
-        <>
-            <h1>Portfolio</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et dolor sit amet felis volutpat hendrerit. Suspendisse sollicitudin mauris nec felis condimentum luctus. Duis metus ipsum, maximus a sagittis id, pulvinar eu risus. Mauris pharetra ante quis elit iaculis, a pretium mi eleifend. Maecenas id sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed dui leo.
+        <section className='portfolio-container'>
+            <h2>Portfolio</h2>
+            {projectData.map((project) => (
+                <section className='project-card'>
+                    <section className='project-thumbnail'>
+                        <img src={project.thumbnail} alt={project.name} />
+                    </section>
 
-Aenean lacus sem, venenatis non dapibus sit amet, hendrerit eget est. In hac habitasse platea dictumst. Aenean ultrices libero convallis enim blandit, non dignissim felis vestibulum. Aliquam volutpat, dui a varius faucibus, justo massa dictum orci, a tincidunt lacus orci at magna. Nulla vel quam eros. Integer efficitur elit vel dictum interdum. Aliquam sodales massa orci, at rhoncus urna ultricies et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris quis eros ac est lacinia porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean velit magna, feugiat at dolor ac, dignissim auctor nisi. Nulla at viverra tortor. Nam dapibus fringilla turpis, sit amet ullamcorper leo sagittis et. Mauris maximus interdum interdum. Quisque eu dolor id urna faucibus eleifend vitae ac nisi. Fusce pulvinar mauris sed magna egestas, id aliquam leo malesuada.
-
-Nulla in ipsum dolor. Vivamus sed hendrerit magna. Vivamus ut tincidunt diam. Nulla ut pharetra neque, at fermentum ligula. Ut sit amet rhoncus sem, id bibendum turpis. Aliquam hendrerit sodales tortor, at vehicula velit pretium ac. Mauris ornare ac nulla vitae vestibulum. Maecenas semper, urna vitae dignissim lacinia, mi felis euismod nisi, sed venenatis nisi dolor sit amet arcu. Nullam dolor magna, eleifend non tempor et, maximus sed erat. Donec vitae ullamcorper orci.
-
-Nam et vehicula nisl, sed accumsan nibh. Morbi metus risus, malesuada ut erat eget, fringilla luctus ipsum. Sed sagittis est enim, ac efficitur leo facilisis volutpat. Praesent ullamcorper pulvinar sagittis. Pellentesque non pulvinar nunc. Fusce sed lacinia metus, ac aliquet ex. Praesent vulputate nisi eu venenatis laoreet. Nullam et bibendum metus, ac ornare dui.
-
-Ut efficitur, tortor ac viverra viverra, tortor nulla cursus mi, lobortis accumsan velit ante nec velit. Maecenas imperdiet sodales elit, eleifend pellentesque sem consectetur sed. Donec suscipit, nibh et tristique scelerisque, odio elit vulputate diam, eu consectetur augue nibh a quam. Proin vitae tristique tortor. Donec in luctus lacus. Nulla tortor metus, semper non lectus ut, facilisis laoreet odio. Donec vitae turpis fringilla, porttitor urna sed, semper orci. Phasellus non est id nulla auctor euismod quis et erat. Sed placerat tempus nisl id commodo. Suspendisse ante est, eleifend id nunc at, tincidunt volutpat velit. Aliquam luctus neque leo, sed scelerisque libero vestibulum in. Etiam porta commodo leo, vitae gravida mi elementum interdum. Curabitur sit amet suscipit lorem.
-
-Nulla sit amet auctor lectus. Quisque semper iaculis velit. Nullam id risus et nulla lacinia accumsan. Cras augue lectus, convallis sit amet ultricies quis, aliquet vel purus. Aliquam ullamcorper luctus mattis. Nulla iaculis magna euismod vestibulum fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut massa sapien, malesuada et arcu eu, elementum interdum tellus. Aenean semper ante elit, eu dignissim mi tempus a. Duis tempor neque leo, ut aliquet ipsum auctor ac. Nullam velit mi, sodales id pellentesque in, vestibulum hendrerit ligula. Nulla cursus orci a magna maximus dignissim vitae luctus enim. Maecenas lacinia orci turpis, sit amet dignissim sem viverra vel. Sed nisi risus, vehicula eu aliquet non, lobortis sit amet sem. Suspendisse euismod ipsum nec pulvinar hendrerit. Proin consequat consectetur ligula sed rhoncus.
-
-Vestibulum viverra metus vitae sem condimentum, eu mattis purus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut suscipit risus in eleifend ullamcorper. Morbi leo libero, accumsan sed ligula faucibus, tincidunt pellentesque ante. Proin at pulvinar dolor. Vestibulum ex lacus, faucibus id tellus in, rutrum malesuada justo. Suspendisse eget risus id leo facilisis congue. Proin dictum odio vel purus vehicula, vel lobortis nisi viverra. Suspendisse lobortis felis et euismod imperdiet. Duis mauris mauris, convallis sit amet mi eu, rutrum vestibulum nunc. Nunc varius vel justo sed tristique. Nam elementum urna elit, at pellentesque diam posuere vel. Donec congue ac mi in bibendum. Fusce sagittis congue ipsum, at varius neque feugiat vel.
-
-Sed accumsan urna non metus tempor scelerisque. Sed vel lorem finibus, efficitur tortor nec, consequat turpis. Sed tincidunt vulputate arcu, quis hendrerit tortor luctus eu. Donec non eros neque. Suspendisse molestie nisl eu purus hendrerit, facilisis placerat ex placerat. Vivamus cursus ante sit amet arcu rutrum, a congue tellus tincidunt. Quisque eu varius nulla.
-
-Phasellus feugiat dui non velit lobortis, vel lacinia ex hendrerit. Donec suscipit erat ut velit mollis, at tristique diam porttitor. Maecenas vehicula erat eget tempus euismod. Praesent non sem eu dui mattis consectetur eget consectetur eros. Fusce in iaculis est, ut pharetra libero. Nunc placerat nibh id iaculis commodo. Nullam pretium dui vitae scelerisque sodales. Fusce commodo velit sed tellus convallis sollicitudin. Aliquam dolor erat, tristique eu mauris quis, rhoncus tincidunt turpis. Suspendisse id eros venenatis, ultrices lorem quis, blandit mi. Nullam pulvinar consequat fermentum. Quisque at vehicula augue. Aliquam non libero ac risus lacinia egestas ut ac erat.
-
-Nullam vehicula dignissim aliquet. Vivamus quis nulla sollicitudin, convallis velit at, congue ex. Cras congue ex ut libero commodo ultrices. Etiam hendrerit nunc et ex pretium, vitae eleifend enim varius. Quisque mollis, dui et ultricies ultricies, enim enim dignissim mauris, a sollicitudin eros turpis in lectus. Vivamus auctor nisi ac nulla cursus, in rutrum mauris malesuada. Morbi condimentum tincidunt efficitur. Donec lacinia ornare orci sed dictum. Nunc vitae pretium ante. Phasellus ut enim vitae tellus accumsan mattis vitae vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo sed nisi quis euismod.
-
-Donec at elit eget nulla rhoncus tincidunt non eu neque. Nullam lobortis tortor tristique, sollicitudin dolor vitae, vulputate sapien. Etiam eu convallis est. Pellentesque condimentum euismod accumsan. Nulla accumsan malesuada odio sed auctor. Donec quis turpis dapibus risus sollicitudin fringilla. Quisque euismod porta tempor. Vestibulum sollicitudin leo id posuere dignissim. Pellentesque vitae congue ipsum. Nulla et ipsum aliquet, malesuada mauris vel, tristique ante. Suspendisse vitae tortor sed orci consectetur ornare vitae eu erat. Suspendisse eros sapien, vulputate ut dolor vitae, fringilla auctor massa. In lobortis nulla ac orci pharetra tincidunt.
-
-Nullam in tortor ac nulla eleifend lobortis vel vitae nulla. Donec tincidunt quis elit vitae mattis. Curabitur non odio sed metus tincidunt condimentum quis ut lacus. Etiam vitae libero condimentum, ullamcorper urna vitae, lacinia velit. Quisque non volutpat nunc. Ut felis sem, mattis vel erat non, convallis congue libero. Nam eleifend at risus eget tempus. Sed ipsum leo, mollis non suscipit sit amet, rhoncus nec ligula. Integer pellentesque vel velit a aliquet.
-
-Integer sodales eget leo facilisis lobortis. Nullam viverra convallis urna tincidunt gravida. Donec aliquet ultrices elit a lacinia. Duis quis nibh sodales justo dictum vehicula. Suspendisse blandit sed elit nec eleifend. Curabitur sit amet justo interdum, mollis odio nec, consectetur orci. Vivamus eu nisi ultrices libero porttitor faucibus. Morbi ac mattis turpis, in accumsan mi.
-
-Pellentesque et magna nulla. Ut rhoncus efficitur tempor. Ut in congue nisl, nec scelerisque sapien. Nunc finibus leo elit, at consequat odio facilisis nec. Nunc et dui arcu. Cras in consectetur urna. Nulla facilisi. Duis lorem nunc, facilisis a euismod eget, volutpat eget lectus. Sed gravida elit sit amet leo tempor, ut dignissim mi gravida. Sed aliquam nibh quis tincidunt laoreet. Ut interdum lectus ac convallis lacinia. Nullam non porta nunc. Nunc id vulputate sapien, in mollis sem.
-
-Aliquam id condimentum erat, id semper lorem. Ut pulvinar arcu sed ipsum dignissim, eget accumsan ante aliquet. Vivamus tristique elit ac erat interdum mattis. Aliquam fermentum dignissim est, nec euismod lorem aliquet quis. Nam gravida ligula vel euismod dictum. Vestibulum faucibus enim non urna dignissim, nec malesuada nisi dapibus. Pellentesque faucibus non arcu quis ultricies. Maecenas placerat vulputate turpis eget tincidunt. Sed quam magna, iaculis non purus et, malesuada pharetra lectus. Integer in ullamcorper elit, in elementum turpis. Proin in dolor a mi dictum pharetra a ut lacus. Nam cursus erat lectus, et vulputate nibh varius et. Vivamus tristique quam vel massa tristique, at convallis arcu pharetra. Morbi pretium est et lectus eleifend, nec maximus erat aliquam.
-
-Vivamus efficitur tellus nec tortor sollicitudin egestas. Suspendisse lacinia finibus urna blandit molestie. Aenean accumsan tortor in lorem efficitur, aliquet pellentesque nisi porta. Integer hendrerit elit et porta finibus. Integer bibendum augue in laoreet dapibus. Fusce urna lorem, vehicula maximus magna ac, pretium suscipit dui. Duis maximus egestas ex at placerat. Vestibulum porttitor tellus ac accumsan eleifend.
-
-Etiam dapibus, tortor et bibendum dictum, elit lorem ultrices lacus, vitae pretium neque orci ut erat. Nunc ut pulvinar mi. Sed dictum urna libero, et aliquam urna lobortis a. In eu nisi non lacus placerat tincidunt vitae ac eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum feugiat non ipsum sed cursus. Ut nulla purus, rhoncus in hendrerit nec, bibendum a turpis. Sed ac odio non ex ornare molestie et nec metus. Fusce a odio velit. Sed congue aliquet felis in lobortis. Morbi euismod augue mauris, eu ultricies neque posuere id. Etiam ut facilisis justo.
-
-Praesent ut dui sagittis lectus scelerisque rhoncus. Pellentesque metus urna, porta et posuere in, auctor ac turpis. Vestibulum non sem nec mi varius ornare ac ac metus. Nullam sollicitudin, enim feugiat condimentum congue, lacus nisi dictum enim, ut luctus nisl metus quis ex. Nunc ac dolor ac sapien egestas accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus erat tortor, id lacinia tellus porta fringilla.
-
-Curabitur a ornare elit, a feugiat magna. Nulla et erat tortor. Integer non urna egestas, interdum nulla vel, suscipit orci. Sed consequat id eros ut bibendum. In convallis enim a dui dignissim, in volutpat urna efficitur. Morbi eu auctor odio. Etiam pretium viverra lorem id gravida. Morbi sit amet iaculis libero. Nunc id molestie arcu, non tempus justo. Sed at vestibulum justo. Nunc sollicitudin ligula vel ligula gravida blandit. Integer faucibus in nisl in accumsan.
-            </p>
-        </>
+                    <section className='project-info'>
+                        <h3>{project.name}</h3>
+                        <p>{project.description}</p>
+                        <p>Technologies Used: {project.tech}</p>
+                        <div className='project-links'>
+                            <a id="app-btn" href={project.deployed} target="_blank">
+                                <Icon name='play' size='small'/>
+                                DEPLOYED LINK
+                            </a>
+                            <a id="repo-btn" href={project.repository} target="_blank">
+                                <Icon name='github' size='large'/>
+                                GITHUB REPOSITORY
+                            </a>
+                        </div>
+                    </section>
+                </section>
+            ))}
+        </section>
     );
 }
 

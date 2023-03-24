@@ -1,6 +1,7 @@
 :root {
     --header-height: 64px;
     --footer-height: 64px;
+    --repo-btn-color: rgb(58, 58, 255);
 }
 
 * {
@@ -39,10 +40,58 @@ body {
     cursor: pointer;
 }
 
-/* Content Styles */
-.content {
-    /* height: 100vh; */
-    width: 100%;
+/* Portfolio Styles */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 4px #0000001a;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 800px;
+}
+
+.project-thumbnail {
+    height: 400px;
+    width: 400px;
+}
+.project-thumbnail img {
+    height: 400px;
+    width: 400px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    padding: 0px 16px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 12px;
+    border: 2px solid var(--repo-btn-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#app-btn {
+    color: white;
+    background-color: var(--repo-btn-color);
+}
+
+#repo-btn {
+    color: var(--repo-btn-color);
 }
 
 /* Footer Styles */

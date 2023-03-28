@@ -2,6 +2,7 @@
     --header-height: 64px;
     --footer-height: 64px;
     --repo-btn-color: rgb(58, 58, 255);
+    --contact-width: 500px;
 }
 
 * {
@@ -94,6 +95,28 @@ body {
     color: var(--repo-btn-color);
 }
 
+/* Contact Styles */
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--contact-width);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input {
+    width: var(--contact-width);
+}
+
+.contact-form textarea {
+    width: var(--contact-width);
+    height: 100px;
+}
+
 /* Footer Styles */
 .footer {
     /* position: absolute; */
@@ -116,3 +139,34 @@ body {
     color: black;
     transition: 200ms ease-in;
 }
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

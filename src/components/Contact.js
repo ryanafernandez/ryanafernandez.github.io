@@ -1,4 +1,13 @@
 import React, { useState } from 'react';
+import { 
+    Text,
+    Heading, 
+    Flex, 
+    FormControl, 
+    Input, 
+    Button, 
+    Textarea
+} from '@chakra-ui/react';
 
 function Contact() {
     const [contactForm, setContactForm] = useState({
@@ -34,37 +43,42 @@ function Contact() {
     };
 
     return (
-        <div>
-            <h1>Contact</h1>
-            <p>Have a question or want to work together? Leave a message and I'll get back to you as soon as possible.</p>
+        <Flex className='contact' direction='column' align='center'>
+            <Heading>Contact</Heading>
+            <Text>Have a question or want to work together? 
+                Leave a message and I'll get back to you as soon as possible.</Text>
             <form className="contact-form" onSubmit={handleSubmit}>
-                <input
-                    type="text"
+                <Input
                     placeholder="Name"
                     value={contactForm.name}
                     name="name"
                     className="contact-input"
                     onChange={handleChange}
-                ></input>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={contactForm.email}
-                    name="email"
-                    className="contact-input"
-                    onChange={handleChange}
-                ></input>
-                <input
-                    type="text"
-                    placeholder="Message"
-                    value={contactForm.message}
-                    name="message"
-                    className="contact-input"
-                    onChange={handleChange}
-                ></input>
-                <button className="contact-submit">Submit</button>
+                ></Input>
+                <FormControl isRequired>
+                    <Input
+                        type="email"
+                        placeholder="Email"
+                        value={contactForm.email}
+                        name="email"
+                        className="contact-input"
+                        onChange={handleChange}
+                    ></Input>
+                </FormControl>
+                <FormControl isRequired>
+                    <Textarea
+                        id="contact-message"
+                        type="text"
+                        placeholder="Message"
+                        value={contactForm.message}
+                        name="message"
+                        className="contact-input"
+                        onChange={handleChange}
+                    ></Textarea>
+                </FormControl>
+                <Button alignSelf='flex-end' variant='outline' type='submit'>Submit</Button>
             </form>
-        </div>
+        </Flex>
     );
 }
 

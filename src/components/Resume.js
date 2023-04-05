@@ -3,7 +3,7 @@ import React from 'react';
 function Resume() {
 
     return (
-        <>
+        <section id='resume' className='content'>
             <h1>Resume</h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et dolor sit amet felis volutpat hendrerit. Suspendisse sollicitudin mauris nec felis condimentum luctus. Duis metus ipsum, maximus a sagittis id, pulvinar eu risus. Mauris pharetra ante quis elit iaculis, a pretium mi eleifend. Maecenas id sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed dui leo.
@@ -20,7 +20,7 @@ Ut efficitur, tortor ac viverra viverra, tortor nulla cursus mi, lobortis accums
 
 Nulla sit amet auctor lectus. Quisque semper iaculis velit. Nullam id risus et nulla lacinia accumsan. Cras augue lectus, convallis sit amet ultricies quis, aliquet vel purus. Aliquam ullamcorper luctus mattis. Nulla iaculis magna euismod vestibulum fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut massa sapien, malesuada et arcu eu, elementum interdum tellus. Aenean semper ante elit, eu dignissim mi tempus a. Duis tempor neque leo, ut aliquet ipsum auctor ac. Nullam velit mi, sodales id pellentesque in, vestibulum hendrerit ligula. Nulla cursus orci a magna maximus dignissim vitae luctus enim. Maecenas lacinia orci turpis, sit amet dignissim sem viverra vel. Sed nisi risus, vehicula eu aliquet non, lobortis sit amet sem. Suspendisse euismod ipsum nec pulvinar hendrerit. Proin consequat consectetur ligula sed rhoncus.
             </p>
-        </>
+        </section>
     );
 }
 

@@ -9,16 +9,16 @@ function Header() {
             </div>
             <ul className='navigation'>
                 <li className='nav-item'>
-                    <NavLink exact to="/">About</NavLink>
+                    <a href="#about">About</a>
                 </li>
                 <li className='nav-item'>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li className='nav-item'>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li className='nav-item'>
-                    <NavLink to="/resume">Resume</NavLink>
+                    <a href="#resume">Resume</a>
                 </li>
             </ul>
         </header>

@@ -1,24 +1,44 @@
 import React from 'react';
+import {
+    Box,
+    Flex,
+    Image,
+    Text,
+    Heading
+} from '@chakra-ui/react';
+
+import aboutMePlaceholder from '../assets/images/about-placeholder.png';
 
 function About() {
-
     return (
-        <>
-            <h1>About</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et dolor sit amet felis volutpat hendrerit. Suspendisse sollicitudin mauris nec felis condimentum luctus. Duis metus ipsum, maximus a sagittis id, pulvinar eu risus. Mauris pharetra ante quis elit iaculis, a pretium mi eleifend. Maecenas id sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed dui leo.
-
-Aenean lacus sem, venenatis non dapibus sit amet, hendrerit eget est. In hac habitasse platea dictumst. Aenean ultrices libero convallis enim blandit, non dignissim felis vestibulum. Aliquam volutpat, dui a varius faucibus, justo massa dictum orci, a tincidunt lacus orci at magna. Nulla vel quam eros. Integer efficitur elit vel dictum interdum. Aliquam sodales massa orci, at rhoncus urna ultricies et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris quis eros ac est lacinia porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean velit magna, feugiat at dolor ac, dignissim auctor nisi. Nulla at viverra tortor. Nam dapibus fringilla turpis, sit amet ullamcorper leo sagittis et. Mauris maximus interdum interdum. Quisque eu dolor id urna faucibus eleifend vitae ac nisi. Fusce pulvinar mauris sed magna egestas, id aliquam leo malesuada.
-
-Nulla in ipsum dolor. Vivamus sed hendrerit magna. Vivamus ut tincidunt diam. Nulla ut pharetra neque, at fermentum ligula. Ut sit amet rhoncus sem, id bibendum turpis. Aliquam hendrerit sodales tortor, at vehicula velit pretium ac. Mauris ornare ac nulla vitae vestibulum. Maecenas semper, urna vitae dignissim lacinia, mi felis euismod nisi, sed venenatis nisi dolor sit amet arcu. Nullam dolor magna, eleifend non tempor et, maximus sed erat. Donec vitae ullamcorper orci.
-
-Nam et vehicula nisl, sed accumsan nibh. Morbi metus risus, malesuada ut erat eget, fringilla luctus ipsum. Sed sagittis est enim, ac efficitur leo facilisis volutpat. Praesent ullamcorper pulvinar sagittis. Pellentesque non pulvinar nunc. Fusce sed lacinia metus, ac aliquet ex. Praesent vulputate nisi eu venenatis laoreet. Nullam et bibendum metus, ac ornare dui.
-
-Ut efficitur, tortor ac viverra viverra, tortor nulla cursus mi, lobortis accumsan velit ante nec velit. Maecenas imperdiet sodales elit, eleifend pellentesque sem consectetur sed. Donec suscipit, nibh et tristique scelerisque, odio elit vulputate diam, eu consectetur augue nibh a quam. Proin vitae tristique tortor. Donec in luctus lacus. Nulla tortor metus, semper non lectus ut, facilisis laoreet odio. Donec vitae turpis fringilla, porttitor urna sed, semper orci. Phasellus non est id nulla auctor euismod quis et erat. Sed placerat tempus nisl id commodo. Suspendisse ante est, eleifend id nunc at, tincidunt volutpat velit. Aliquam luctus neque leo, sed scelerisque libero vestibulum in. Etiam porta commodo leo, vitae gravida mi elementum interdum. Curabitur sit amet suscipit lorem.
-            </p>
-        </>
+        <Flex id='about' className='about content' direction='column' align='center'>
+            <Heading className='content-heading'>ABOUT ME</Heading>
+            <Flex className='content-container'>
+                <Image 
+                    id='about-image'
+                    src={ aboutMePlaceholder } 
+                    alt='placeholder image'
+                    borderRadius='full'
+                    border='solid'
+                    width='320px'
+                    height='320px'
+                    alignSelf={'center'}
+                />
+                <Box id='about-info'>
+                    <Text>
+                        Hello! I'm Ryan Fernandez, a full-stack web developer with a background in Computer Engineering. 
+                        Recently, I graduated from the UC San Diego Extension Full Stack Coding Boot Camp. 
+                        I also attended San Diego State University, where I completed my 
+                        Bachelor of Science in Computer Engineering.
+                    </Text>
+                    <br/>
+                    <Text>
+                         I am passionate about coding and problem solving, and I am excited to work alongside 
+                         other amazing coders and continue to grow as a developer!
+                    </Text>
+                </Box>
+            </Flex>
+        </Flex>
     );
 }
 

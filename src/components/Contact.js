@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { 
+    Box,
     Text,
     Heading, 
     Flex, 
@@ -43,11 +44,14 @@ function Contact() {
     };
 
     return (
-        <Flex className='contact' direction='column' align='center'>
+        <Flex id='contact' className='contact content' direction='column' align='center'>
             <Heading>Contact</Heading>
-            <Text>Have a question or want to work together? 
-                Leave a message and I'll get back to you as soon as possible.</Text>
+            
             <form className="contact-form" onSubmit={handleSubmit}>
+                <Text>
+                    Have a question or want to work together? 
+                    Leave a message and I'll get back to you as soon as possible.
+                </Text>
                 <Input
                     placeholder="Name"
                     value={contactForm.name}

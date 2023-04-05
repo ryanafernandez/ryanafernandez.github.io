@@ -47,45 +47,51 @@ function Contact() {
         <Flex id='contact' className='contact content' direction='column' align='center'>
             <Heading className='content-heading'>CONTACT</Heading>
             
-            <form className="contact-form" onSubmit={handleSubmit}>
-                <Text>
-                    Have a question or want to work together? 
-                    Leave a message and I'll get back to you as soon as possible.
-                </Text>
-                <Text>
-                    You can also email me directly at:
-                    <a href='mailto:ryanfernandez11@gmail.com' target='_blank'> RYANFERNANDEZ11@GMAIL.COM</a>
-                </Text>
-                <Input
-                    placeholder="Name"
-                    value={contactForm.name}
-                    name="name"
-                    className="contact-input"
-                    onChange={handleChange}
-                ></Input>
-                <FormControl isRequired>
+            <Flex justify='space-evenly'>
+                <Box className='contact-text'>
+                    <Text>
+                        Have a question or want to work together? 
+                        Leave a message and I'll get back to you as soon as possible.
+                    </Text>
+                    <br/>
+                    <Text>
+                        You can also email me directly at:
+                        <a href='mailto:ryanfernandez11@gmail.com' target='_blank'> RYANFERNANDEZ11@GMAIL.COM</a>
+                    </Text>
+                </Box>
+
+                <form className="contact-form" onSubmit={handleSubmit}>
                     <Input
-                        type="email"
-                        placeholder="Email"
-                        value={contactForm.email}
-                        name="email"
+                        placeholder="Name"
+                        value={contactForm.name}
+                        name="name"
                         className="contact-input"
                         onChange={handleChange}
                     ></Input>
-                </FormControl>
-                <FormControl isRequired>
-                    <Textarea
-                        id="contact-message"
-                        type="text"
-                        placeholder="Message"
-                        value={contactForm.message}
-                        name="message"
-                        className="contact-input"
-                        onChange={handleChange}
-                    ></Textarea>
-                </FormControl>
-                <Button alignSelf='flex-end' variant='outline' type='submit'>Submit</Button>
-            </form>
+                    <FormControl isRequired>
+                        <Input
+                            type="email"
+                            placeholder="Email"
+                            value={contactForm.email}
+                            name="email"
+                            className="contact-input"
+                            onChange={handleChange}
+                        ></Input>
+                    </FormControl>
+                    <FormControl isRequired>
+                        <Textarea
+                            id="contact-message"
+                            type="text"
+                            placeholder="Message"
+                            value={contactForm.message}
+                            name="message"
+                            className="contact-input"
+                            onChange={handleChange}
+                        ></Textarea>
+                    </FormControl>
+                    <Button alignSelf='center' variant='outline' type='submit'>Submit</Button>
+                </form>
+            </Flex>
         </Flex>
     );
 }

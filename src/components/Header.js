@@ -1,28 +1,33 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
+import {
+    Flex,
+    Box,
+    Heading,
+    UnorderedList,
+    ListItem,
+    Link
+} from '@chakra-ui/react';
 
 function Header() {
     return (
-        <header className='header'>
-            <div className='brand'>
-                <h1>RYAN FERNANDEZ</h1>
-            </div>
-            <ul className='navigation'>
-                <li className='nav-item'>
-                    <a href="#about">ABOUT</a>
-                </li>
-                <li className='nav-item'>
-                    <a href="#portfolio">PORTFOLIO</a>
-                </li>
-                <li className='nav-item'>
-                    <a href="#contact">CONTACT</a>
-                </li>
-                {/* <li className='nav-item'>
-                    <a href="#resume">RESUME</a>
-                </li> */}
-            </ul>
-        </header>
-    )
+        <Flex className='header' justify='space-between' align='center'>
+            <Box className='brand'>
+                <Heading>RYAN FERNANDEZ</Heading>
+            </Box>
+
+            <UnorderedList className='navigation'>
+                <ListItem className='nav-item'>
+                    <Link href='#about'>ABOUT</Link>
+                </ListItem>
+                <ListItem className='nav-item'>
+                    <Link href='#portfolio'>PORTFOLIO</Link>
+                </ListItem>
+                <ListItem className='nav-item'>
+                    <Link href='#contact'>CONTACT</Link>
+                </ListItem>
+            </UnorderedList>
+        </Flex>
+    );
 }
 
 export default Header;

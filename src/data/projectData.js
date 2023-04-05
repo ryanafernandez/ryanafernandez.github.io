@@ -1,4 +1,3 @@
-import placeholder from '../assets/images/placeholder700x500.svg';
 import chewbyThumbnail from '../assets/images/chewby-thumbnail.png';
 import dbfThumbnail from '../assets/images/dbf-thumbnail.png';
 import hiddenGemsThumbnail from '../assets/images/hidden-gems-thumbnail.png';
@@ -29,24 +28,4 @@ export const projectData = [
         repository: "https://github.com/eddygoto/Project-1-Travel-Site",
         thumbnail: hiddenGemsThumbnail
     }
-];
-
-export const technologies = [
-    "MongoDB",
-    "Express.js",
-    "React",
-    "Node",
-    "Apollo Server",
-    "GraphQL",
-    "JWT",
-    "Semantic-UI",
-    "Chakra-UI",
-    "JSX",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "jQuery",
-    "Express Handlebars",
-    "Sequelize",
-    "MySQL2"
 ];

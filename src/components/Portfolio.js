@@ -5,10 +5,8 @@ import {
     Heading,
     Image,
     Text,
-    Link,
-    Spacer
+    Link
 } from '@chakra-ui/react';
-import { Icon } from 'semantic-ui-react';
 
 import { projectData } from '../data/projectData';
 

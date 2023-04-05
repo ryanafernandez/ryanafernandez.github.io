@@ -1,13 +1,10 @@
 import React from 'react';
 import {
-    Box,
     Flex,
     Grid,
     GridItem,
-    Tag,
     Text,
-    Heading,
-    Spacer
+    Heading
 } from '@chakra-ui/react';
 
 import { Icon } from 'semantic-ui-react';

@@ -8,6 +8,9 @@ import {
 import { Icon } from 'semantic-ui-react';
 
 function Footer() {
+
+    const today = new Date();
+
     return (
         <Flex className='footer' direction='column' align='center' justify='space-between' bg='#f0f0f0'>
             <Box className='footer-links'>
@@ -22,7 +25,7 @@ function Footer() {
                 </Link>
             </Box>
             <Box>
-                <Text>Ryan Fernandez 2023</Text>
+                <Text>Ryan Fernandez {today.getFullYear()}</Text>
             </Box>
         </Flex>
     );

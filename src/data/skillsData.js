@@ -73,23 +73,3 @@ export const skillsData = [
     },
     
 ];
-
-export const technologies = [
-    "MongoDB",
-    "Express.js",
-    "React",
-    "Node",
-    "Apollo Server",
-    "GraphQL",
-    "JWT",
-    "Semantic-UI",
-    "Chakra-UI",
-    "JSX",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "jQuery",
-    "Express Handlebars",
-    "Sequelize",
-    "MySQL2"
-];

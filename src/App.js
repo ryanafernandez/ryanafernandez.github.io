@@ -20,7 +20,7 @@ function App() {
         <Skills />
         <Portfolio/>
         <Contact/>
-        <Resume/>
+        {/* <Resume/> */}
         <Footer/>
       </VStack>
     </ChakraProvider>

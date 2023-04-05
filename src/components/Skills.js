@@ -18,7 +18,7 @@ function Skills() {
 
     return (
         <Flex id='skills' className='skills content' direction='column' align='center'>
-            <Heading className='content-heading'>Skills</Heading>
+            <Heading className='content-heading'>SKILLS</Heading>
             <Grid templateColumns='repeat(6, 1fr)' gap='8'>
                 {skillsData.map((skill) => (
                     <GridItem>

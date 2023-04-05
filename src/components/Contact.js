@@ -45,12 +45,16 @@ function Contact() {
 
     return (
         <Flex id='contact' className='contact content' direction='column' align='center'>
-            <Heading>Contact</Heading>
+            <Heading className='content-heading'>CONTACT</Heading>
             
             <form className="contact-form" onSubmit={handleSubmit}>
                 <Text>
                     Have a question or want to work together? 
                     Leave a message and I'll get back to you as soon as possible.
+                </Text>
+                <Text>
+                    You can also email me directly at:
+                    <a href='mailto:ryanfernandez11@gmail.com' target='_blank'> RYANFERNANDEZ11@GMAIL.COM</a>
                 </Text>
                 <Input
                     placeholder="Name"

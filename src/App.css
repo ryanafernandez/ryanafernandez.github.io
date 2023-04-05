@@ -89,6 +89,7 @@ p {
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
+    
     padding: 0px 16px;
     
 }
@@ -168,14 +169,15 @@ p {
 /* Footer Styles */
 .footer {
     /* position: absolute; */
-    padding: 8px 0px;
-    display: flex;
+    padding: 16px 0px;
+    gap: 8px;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; */
     /* bottom: 0; */
-    height: var(--footer-height);
+    /* height: var(--footer-height); */
     width: 100%;
 }
 

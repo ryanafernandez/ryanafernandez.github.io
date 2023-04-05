@@ -15,7 +15,7 @@ import { projectData } from '../data/projectData';
 function Portfolio() {
     return (
         <Flex id='portfolio' className='portfolio content' direction='column' align='center'>
-            <Heading className='content-heading'>Projects</Heading>
+            <Heading className='content-heading'>PROJECTS</Heading>
             <Flex direction='column' align='center' gap='16'>
                 {projectData.map((project) => (
                     <Flex className='project-card'>

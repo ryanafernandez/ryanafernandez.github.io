@@ -5,21 +5,21 @@ function Header() {
     return (
         <header className='header'>
             <div className='brand'>
-                <h1>Ryan Fernandez</h1>
+                <h1>RYAN FERNANDEZ</h1>
             </div>
             <ul className='navigation'>
                 <li className='nav-item'>
-                    <a href="#about">About</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
-                <li className='nav-item'>
-                    <a href="#resume">Resume</a>
-                </li>
+                {/* <li className='nav-item'>
+                    <a href="#resume">RESUME</a>
+                </li> */}
             </ul>
         </header>
     )

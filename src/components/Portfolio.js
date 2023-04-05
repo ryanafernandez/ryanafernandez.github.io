@@ -1,36 +1,47 @@
 import React from 'react';
+import {
+    Flex,
+    Box,
+    Heading,
+    Image,
+    Text,
+    Link,
+    Spacer
+} from '@chakra-ui/react';
 import { Icon } from 'semantic-ui-react';
 
 import { projectData } from '../data/projectData';
 
 function Portfolio() {
     return (
-        <section id='portfolio' className='portfolio-container content'>
-            <h2>Projects</h2>
-            {projectData.map((project) => (
-                <section className='project-card'>
-                    <section className='project-thumbnail'>
-                        <img src={project.thumbnail} alt={project.name} />
-                    </section>
+        <Flex id='portfolio' className='portfolio content' direction='column' align='center'>
+            <Heading className='content-heading'>Projects</Heading>
+            <Flex direction='column' align='center' gap='16'>
+                {projectData.map((project) => (
+                    <Flex className='project-card'>
+                        <Image
+                            className='project-thumbnail'
+                            src={ project.thumbnail }
+                            alt={ project.name }
+                        />
 
-                    <section className='project-info'>
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <p>Technologies Used: {project.tech}</p>
-                        <div className='project-links'>
-                            <a id="app-btn" href={project.deployed} target="_blank">
-                                <Icon name='play' size='small'/>
-                                DEPLOYED LINK
-                            </a>
-                            <a id="repo-btn" href={project.repository} target="_blank">
-                                <Icon name='github' size='large'/>
-                                GITHUB REPOSITORY
-                            </a>
-                        </div>
-                    </section>
-                </section>
-            ))}
-        </section>
+                        <Flex className='project-info' direction='column' justify='space-around'>
+                            <Heading>{project.name}</Heading>
+                            <Text>{project.description}</Text>
+                            <Text>Technologies Used: {project.tech}</Text>
+                            <Box className='project-links'>
+                                <Link href={project.deployed} target='_blank'>
+                                    Live
+                                </Link>
+                                <Link href={project.repository} target='_blank'>
+                                    Repo
+                                </Link>
+                            </Box>
+                        </Flex>
+                    </Flex>
+                ))}
+            </Flex>
+        </Flex>
     );
 }
 

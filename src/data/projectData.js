@@ -24,7 +24,7 @@ export const projectData = [
     {
         name: "Hidden Gems - San Diego",
         description: "A website where users can view hidden gem locations in San Diego, CA from a curated list of locations. The application uses the Google Maps and Google Places APIs to present the user with a map of San Diego where users can view a marked location and be presented with an image of the site, the address, and the three most recent reviews submitted on Google.",
-        tech: "JavaScript, HTML, CSS",
+        tech: "JavaScript, Google Maps API, Google Places API, HTML, CSS",
         deployed: "https://eddygoto.github.io/Project-1-Travel-Site/",
         repository: "https://github.com/eddygoto/Project-1-Travel-Site",
         thumbnail: hiddenGemsThumbnail

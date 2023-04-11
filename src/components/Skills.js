@@ -3,6 +3,7 @@ import {
     Flex,
     Grid,
     GridItem,
+    Image,
     Text,
     Heading
 } from '@chakra-ui/react';
@@ -20,7 +21,15 @@ function Skills() {
                 {skillsData.map((skill) => (
                     <GridItem>
                         <Flex direction='column' align='center'>
-                            <Icon name={skill.icon} size='huge'/>
+                            {skill.logo ? 
+                                <Image
+                                    className='skill-logo'
+                                    src={ skill.logo }
+                                    alt={ skill.tech }
+                                />
+                                :
+                                <Icon name={skill.icon} size='huge'/>
+                            }
                             <Text className='skillsText'>
                                 {skill.tech}
                             </Text>

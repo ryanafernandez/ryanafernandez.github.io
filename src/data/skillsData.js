@@ -1,31 +1,46 @@
+import javascriptLogo from '../assets/logos/javascript-logo.png';
+import htmlLogo from '../assets/logos/html-logo.png';
+import cssLogo from '../assets/logos/css-logo.png';
+import reactLogo from '../assets/logos/react-logo.png';
+import jqueryLogo from '../assets/logos/jquery-logo.png';
+import nodeLogo from '../assets/logos/nodejs-logo.png';
+import expressLogo from '../assets/logos/express-logo.png';
+
 export const skillsData = [
     {
         tech: "JavaScript",
-        icon: "js square"
+        icon: "js square",
+        logo: javascriptLogo
     },
     {
         tech: "HTML",
-        icon: "html5"
+        icon: "html5",
+        logo: htmlLogo
     },
     {
         tech: "CSS",
-        icon: "css3 alternate"
+        icon: "css3 alternate",
+        logo: cssLogo
     },
     {
         tech: "React",
-        icon: "react"
+        icon: "react",
+        logo: reactLogo
     },
     {
         tech: "jQuery",
-        icon: "code"
+        icon: "code",
+        logo: jqueryLogo
     },
     {
         tech: "Node.js",
-        icon: "node"
+        icon: "node",
+        logo: nodeLogo
     },
     {
         tech: "Express.js",
-        icon: "code"
+        icon: "code",
+        logo: expressLogo
     },
     {
         tech: "MongoDB",

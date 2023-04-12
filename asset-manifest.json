@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.6dac82e6.css",
-    "main.js": "/static/js/main.c9fbedc5.js",
+    "main.js": "/static/js/main.12657403.js",
     "static/media/hidden-gems-thumbnail.png": "/static/media/hidden-gems-thumbnail.dc217f59ea9be02c79a6.png",
     "static/media/about-placeholder.png": "/static/media/about-placeholder.c3befa19d509b7a7b1d0.png",
-    "static/media/Ryan-Fernandez-Resume.pdf": "/static/media/Ryan-Fernandez-Resume.9f36811503f0bdc85402.pdf",
+    "static/media/Ryan-Fernandez-Resume.pdf": "/static/media/Ryan-Fernandez-Resume.1c7886e930cc20a2404c.pdf",
     "static/media/dbf-thumbnail.png": "/static/media/dbf-thumbnail.39aaa575aeee6c6c78e7.png",
     "static/media/chewby-thumbnail.png": "/static/media/chewby-thumbnail.cf5695fda5896f1c2ace.png",
     "index.html": "/index.html",
     "main.6dac82e6.css.map": "/static/css/main.6dac82e6.css.map",
-    "main.c9fbedc5.js.map": "/static/js/main.c9fbedc5.js.map"
+    "main.12657403.js.map": "/static/js/main.12657403.js.map"
   },
   "entrypoints": [
     "static/css/main.6dac82e6.css",
-    "static/js/main.c9fbedc5.js"
+    "static/js/main.12657403.js"
   ]
 }

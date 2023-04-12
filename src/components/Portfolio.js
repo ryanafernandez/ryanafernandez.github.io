@@ -13,8 +13,8 @@ import { projectData } from '../data/projectData';
 function Portfolio() {
     return (
         <Flex id='portfolio' className='portfolio content' direction='column' align='center'>
-            <Heading className='content-heading'>PROJECTS</Heading>
-            <Flex direction='column' align='center' gap='16'>
+            <Heading className='content-heading'>MY WORK</Heading>
+            <Flex className='content-container' direction='column' align='center' gap='16'>
                 {projectData.map((project) => (
                     <Flex className='project-card'>
                         <Image

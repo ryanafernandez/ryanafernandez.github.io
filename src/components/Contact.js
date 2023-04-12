@@ -7,9 +7,11 @@ import {
     FormControl, 
     Input, 
     Button, 
-    Textarea
+    Textarea,
+    Link,
 } from '@chakra-ui/react';
 
+import { Icon } from 'semantic-ui-react';
 function Contact() {
     const [contactForm, setContactForm] = useState({
         name: '',
@@ -45,20 +47,29 @@ function Contact() {
 
     return (
         <Flex id='contact' className='contact content' direction='column' align='center'>
-            <Heading className='content-heading'>CONTACT</Heading>
             
-            <Flex justify='space-evenly'>
-                <Box className='contact-text'>
+            
+            <Flex className='content-container' justify='space-evenly'>
+                <Flex className='contact-text' direction='column' gap='8px'>
+                    <Heading className='content-heading'>CONTACT ME</Heading>
                     <Text>
-                        Have a question or want to work together? 
-                        Leave a message and I'll get back to you as soon as possible.
+                        Have a question or want to work together?
                     </Text>
-                    <br/>
                     <Text>
-                        You can also email me directly at:
-                        <a href='mailto:ryanfernandez11@gmail.com' target='_blank'> RYANFERNANDEZ11@GMAIL.COM</a>
+                        Leave a message for me here or use the links below and I'll get back to you as soon as possible.
                     </Text>
-                </Box>
+                    <Flex className='footer-links' justify='space-evenly'>
+                        <Link href='https://www.linkedin.com/in/ryan-a-fernandez/' target='_blank'>
+                            <Icon name='linkedin' size='big'/>
+                        </Link>
+                        <Link href='https://github.com/ryanafernandez' target='_blank'>
+                            <Icon name='github' size='big'/>
+                        </Link>
+                        <Link href='mailto:ryanfernandez11@gmail.com' target='_blank'>
+                            <Icon name='mail' size='big'/>
+                        </Link>
+                    </Flex>
+                </Flex>
 
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <Input
@@ -89,7 +100,7 @@ function Contact() {
                             onChange={handleChange}
                         ></Textarea>
                     </FormControl>
-                    <Button alignSelf='center' variant='outline' type='submit'>Submit</Button>
+                    <Button alignSelf='flex-start' variant='outline' type='submit'>Submit</Button>
                 </form>
             </Flex>
         </Flex>

@@ -4,40 +4,70 @@ import {
     Flex,
     Image,
     Text,
-    Heading
+    Heading,
+    Grid,
+    GridItem
 } from '@chakra-ui/react';
+import { Icon } from 'semantic-ui-react';
 
 import aboutMePlaceholder from '../assets/images/about-placeholder.png';
+import { skillsData } from '../data/skillsData';
 
 function About() {
     return (
-        <Flex id='about' className='about content' direction='column' align='center'>
-            <Heading className='content-heading'>ABOUT ME</Heading>
+        <Flex id='about' className='about content' direction='column'>
             <Flex className='content-container'>
-                <Image 
-                    id='about-image'
-                    src={ aboutMePlaceholder } 
-                    alt='placeholder image'
-                    borderRadius='full'
-                    border='solid'
-                    width='320px'
-                    height='320px'
-                    alignSelf={'center'}
-                />
                 <Box id='about-info'>
+                    <Heading className='content-heading'>ABOUT ME</Heading>
                     <Text>
-                        Hello! I'm Ryan Fernandez, a full-stack web developer with a background in Computer Engineering. 
-                        Recently, I graduated from the UC San Diego Extension Full Stack Coding Boot Camp. 
-                        I also attended San Diego State University, where I completed my 
+                        I'm Ryan Fernandez, a full-stack web developer. 
+                        I graduated from the UC San Diego Extension Full Stack Coding Boot Camp 
+                        and from San Diego State University, where I completed my 
                         Bachelor of Science in Computer Engineering.
                     </Text>
                     <br/>
                     <Text>
-                         I am passionate about coding and problem solving, and I am excited to work alongside 
-                         other amazing coders and continue to grow as a developer!
+                        I am passionate about coding and problem solving, and I am excited to work alongside 
+                        other amazing coders and continue to grow as a developer!
                     </Text>
                 </Box>
+                <Image 
+                    id='about-image'
+                    src={ aboutMePlaceholder } 
+                    alt='placeholder image'
+                    borderRadius='10px'
+                    // border='solid'
+                    width='320px'
+                    height='320px'
+                    alignSelf={'center'}
+                />
+                
             </Flex>
+
+            <Box className='content-container'>
+                <Heading className='content-heading'>SKILLS</Heading>
+                <Grid  templateColumns='repeat(6, 1fr)' gap='8'>
+                    {skillsData.map((skill) => (
+                        <GridItem>
+                            <Flex direction='column' align='center'>
+                                {skill.logo ? 
+                                    <Image
+                                        className='skill-logo'
+                                        src={ skill.logo }
+                                        alt={ skill.tech }
+                                    />
+                                    :
+                                    <Icon name={skill.icon} size='huge'/>
+                                }
+                                <Text className='skillsText'>
+                                    {skill.tech}
+                                </Text>
+                            </Flex>
+                        </GridItem>
+                    ))}
+                </Grid>
+            </Box>
+            
         </Flex>
     );
 }

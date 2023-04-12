@@ -1,7 +1,14 @@
 :root {
+    /* --page-bg: #e0e2db; */
+    --content-bg: #ffffff;
+    --nav-footer-bg: #B8BDB5;
+    --nav-footer-text: #000;
+    --nav-footer-hover: #626262;
+    --about-image-bg: #D2D4C8;
+    --button-color: #889696;
     --header-height: 64px;
     --footer-height: 64px;
-    --content-pad-top-bot: 128px;
+    --content-pad-top-bot: 5%;
     --repo-btn-color: rgb(58, 58, 255);
     --contact-width: 500px;
 }
@@ -11,41 +18,84 @@
 }
 
 body {
-    
 }
 
 p {
     font-size: 20px;
 }
 
+
 .content {
     width: 1080px;
 }
 
 .content-heading {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .content-container {
-    display: flex;
-    align-items: center;
+    background-color: var(--content-bg);
+    margin-top: 24px;
+    padding: 32px;
+    border-radius: 48px;
+    width: 1080px;
 }
 
 /* Header Styles */
 .header {
-    position: fixed;
-    padding: 8px 0px;
-    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+.headerInfo {
+    width: 560px;
+}
+
+.headerContinue {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 32px;
+}
+
+#header-nav {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.resumeLink {
+    padding: 12px 32px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background-color: var(--button-color);
+}
+
+#resumeLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+#resumeLink:hover {
+    color: var(--nav-footer-hover);
+    text-decoration: none;
+}
+
+/* Nav Styles */
+.nav-bar {
+    position: sticky;
     top: 0;
+    padding: 8px 0px;
+    color: var(--nav-footer-text);
+    background-color: var(--nav-footer-bg);
     height: var(--header-height);
     width: 100%;
 }
 
-.brand {
+#brand {
     padding-left: 32px;
 }
 
-.navigation {
+.nav-links {
     padding-right: 24px;
     list-style-type: none;
 }
@@ -57,11 +107,16 @@ p {
 
 .nav-item a {
     font-size: 20px;
+}
+
+.nav-item a, #brand, #header-nav a, .socialsLinks a {
+    color: var(--nav-footer-text);
     text-decoration: none;
 }
 
-.nav-item a:hover {
+.nav-item a:hover, #brand:hover, #header-nav a:hover, .socialsLinks a:hover {
     cursor: pointer;
+    color: var(--nav-footer-hover);
     text-decoration: none;
 }
 
@@ -98,18 +153,18 @@ p {
     display: inline-block;
     margin: 4px;
     padding: 8px 12px;
-    border: 2px solid var(--repo-btn-color);
+    border: 2px solid var(--button-color);
     border-radius: 4px;
     font-size: 14px;
 }
 
 #app-btn {
     color: white;
-    background-color: var(--repo-btn-color);
+    background-color: var(--button-color);
 }
 
 #repo-btn {
-    color: var(--repo-btn-color);
+    color: var(--button-color);
 }
 
 /* About Styles */
@@ -120,13 +175,17 @@ p {
 }
 
 #about-image {
-    margin: 8px 5% 8px 8px;
+    margin: 8px 8px 8px 5%;
+    background-color: var(--about-image-bg);
 }
 
 #about-info {
-
+    margin: 16px;
 }
 
+#skills-heading {
+    margin: 40px 0px 16px 48px;
+}
 /* Skills Styles */
 .skillsText {
     text-align: center;
@@ -145,7 +204,6 @@ p {
 .contact {
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
 }
 
 .contact-text {
@@ -170,14 +228,16 @@ p {
     gap: 8px;
     width: 100%;
     font-size: 16px;
+    background-color: var(--nav-footer-bg);
+    color: var(--nav-footer-text)
 }
 
 .footer a {
-    color: grey;
+    color: var(--nav-footer-text);
 }
 
 .footer a:hover {
-    color: black;
+    color: var(--nav-footer-hover);
     transition: 200ms ease-in;
     text-decoration: none;
 }

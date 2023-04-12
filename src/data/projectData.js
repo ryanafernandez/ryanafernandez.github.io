@@ -6,7 +6,7 @@ import hiddenGemsThumbnail from '../assets/images/hidden-gems-thumbnail.png';
 export const projectData = [
     {
         name: "Chewby",
-        description: "Chewby is a calorie logging application that helps you keep a track of the amount of calories you consume each day. The application was built using a basic MERN stack and integrates an Apollo Server, GraphQL, and Semantic-UI.",
+        description: "Chewby is a calorie logging application that helps you keep track of the amount of calories you consume each day. The application was built using a basic MERN stack and integrates an Apollo Server, GraphQL, and Semantic-UI.",
         tech: "MongoDB, Express, React, Node, Apollo Server, GraphQL, JWT, Semantic-UI, JSX, JavaScript, CSS",
         deployed: "https://chewby.herokuapp.com/",
         repository: "https://github.com/ryanafernandez/Chewby",
@@ -15,7 +15,7 @@ export const projectData = [
     {
         name: "DATABASE FighterZ",
         description: "A lightweight turn-based browser game that lets you gain and customize your character's stat points as you battle against other user-created characters on the database. Heavily uses jQuery for the user menus and controls, and CSS keyframes for sprite animations.",
-        tech: "jQuery, Express, Express Handlebars, Sequelize, MySQL2, JavaScript, HTML, CSS",
+        tech: "jQuery, REST API, Express, Handlebars, Sequelize, MySQL2, JavaScript, HTML, CSS",
         deployed: "https://dbfighterz.herokuapp.com/",
         repository: "https://github.com/linhklatt/dbfighterz",
         thumbnail: dbfThumbnail

@@ -5,6 +5,10 @@ import reactLogo from '../assets/logos/react-logo.png';
 import jqueryLogo from '../assets/logos/jquery-logo.png';
 import nodeLogo from '../assets/logos/nodejs-logo.png';
 import expressLogo from '../assets/logos/express-logo.png';
+import mongodbLogo from '../assets/logos/mongodb-logo.png';
+import graphqlLogo from '../assets/logos/graqhql-logo.png';
+import mysqlLogo from '../assets/logos/mysql-logo.png';
+import restapiLogo from '../assets/logos/restapi-logo.png';
 
 export const skillsData = [
     {
@@ -28,6 +32,21 @@ export const skillsData = [
         logo: reactLogo
     },
     {
+        tech: "MongoDB",
+        icon: "code",
+        logo: mongodbLogo
+    },
+    {
+        tech: "GraphQL",
+        icon: "code",
+        logo: graphqlLogo
+    },
+    {
+        tech: "REST APIs",
+        icon: "code",
+        logo: restapiLogo
+    },   
+    {
         tech: "jQuery",
         icon: "code",
         logo: jqueryLogo
@@ -42,49 +61,41 @@ export const skillsData = [
         icon: "code",
         logo: expressLogo
     },
-    {
-        tech: "MongoDB",
-        icon: "code"
-    },
+    
     {
         tech: "MySQL2",
-        icon: "code"
+        icon: "code",
+        logo: mysqlLogo
     },
-    {
-        tech: "Apollo Server",
-        icon: "code"
-    },
-    {
-        tech: "GraphQL",
-        icon: "code"
-    },
-    {
-        tech: "JWT",
-        icon: "code"
-    },
-    {
-        tech: "REST APIs",
-        icon: "code"
-    },
+    // {
+    //     tech: "Apollo Server",
+    //     icon: "code"
+    // },
+    
+    // {
+    //     tech: "JWT",
+    //     icon: "code"
+    // },
+    
     {
         tech: "Git",
         icon: "git square"
     },
-    {
-        tech: "VS Code",
-        icon: "code"
-    },
-    {
-        tech: "Accessibility",
-        icon: "code"
-    },
-    {
-        tech: "Responsive Design",
-        icon: "code"
-    },
-    {
-        tech: "Command Line",
-        icon: "code"
-    },
+    // {
+    //     tech: "VS Code",
+    //     icon: "code"
+    // },
+    // {
+    //     tech: "Accessibility",
+    //     icon: "code"
+    // },
+    // {
+    //     tech: "Responsive Design",
+    //     icon: "code"
+    // },
+    // {
+    //     tech: "Command Line",
+    //     icon: "code"
+    // },
     
 ];

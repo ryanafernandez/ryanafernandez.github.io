@@ -58,7 +58,7 @@ function Contact() {
                     <Text>
                         Leave a message for me here or use the links below and I'll get back to you as soon as possible.
                     </Text>
-                    <Flex className='footer-links' justify='space-evenly'>
+                    <Flex className='contact-links' justify='space-evenly'>
                         <Link href='https://www.linkedin.com/in/ryan-a-fernandez/' target='_blank'>
                             <Icon name='linkedin' size='big'/>
                         </Link>

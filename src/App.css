@@ -222,22 +222,20 @@ p {
     height: 100px;
 }
 
+.contact-links a {
+    color: var(--nav-footer-text);
+}
+
+.contact-links a:hover {
+    color: var(--nav-footer-hover);
+    text-decoration: none;
+}
+
 /* Footer Styles */
 .footer {
     padding: 16px 0px;
-    gap: 8px;
     width: 100%;
     font-size: 16px;
     background-color: var(--nav-footer-bg);
     color: var(--nav-footer-text)
-}
-
-.footer a {
-    color: var(--nav-footer-text);
-}
-
-.footer a:hover {
-    color: var(--nav-footer-hover);
-    transition: 200ms ease-in;
-    text-decoration: none;
 }

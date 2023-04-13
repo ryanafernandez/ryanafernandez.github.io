@@ -51,7 +51,7 @@ function Contact() {
             
             <Flex className='content-container' justify='space-evenly'>
                 <Flex className='contact-text' direction='column' gap='8px'>
-                    <Heading className='content-heading'>CONTACT ME</Heading>
+                    <Heading className='content-heading'><span>CONTACT ME</span></Heading>
                     <Text>
                         Have a question or want to work together?
                     </Text>

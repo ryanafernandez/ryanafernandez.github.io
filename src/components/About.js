@@ -17,8 +17,8 @@ function About() {
     return (
         <Flex id='about' className='about content' direction='column'>
             <Flex className='content-container'>
-                <Box id='about-info'>
-                    <Heading className='content-heading'>ABOUT ME</Heading>
+                <Flex id='about-info' direction='column'>
+                    <Heading className='content-heading'><span>ABOUT ME</span></Heading>
                     <Text>
                         I'm Ryan Fernandez, a full-stack web developer. 
                         I graduated from the UC San Diego Extension Full Stack Coding Boot Camp 
@@ -30,7 +30,7 @@ function About() {
                         I am passionate about coding and problem solving, and I am excited to work alongside 
                         other amazing coders and continue to grow as a developer!
                     </Text>
-                </Box>
+                </Flex>
                 <Image 
                     id='about-image'
                     src={ aboutMePlaceholder } 
@@ -45,7 +45,7 @@ function About() {
             </Flex>
 
             <Box className='content-container'>
-                <Heading className='content-heading'>SKILLS</Heading>
+                <Heading className='content-heading'><span>SKILLS</span></Heading>
                 <Grid  templateColumns='repeat(6, 1fr)' gap='8'>
                     {skillsData.map((skill) => (
                         <GridItem>

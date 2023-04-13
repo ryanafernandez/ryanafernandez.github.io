@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { 
     Box,
     Text,
@@ -12,7 +12,10 @@ import {
 } from '@chakra-ui/react';
 
 import { Icon } from 'semantic-ui-react';
+import emailjs from "@emailjs/browser";
+
 function Contact() {
+    const form = useRef();
     const [contactForm, setContactForm] = useState({
         name: '',
         email: '',
@@ -25,6 +28,12 @@ function Contact() {
         try {
             // submit from
             console.log(contactForm);
+            emailjs.sendForm('service_f4g15lo', 'portfolio_contact_form', form.current, 't5FijVelY7TTqvyN_')
+                .then(function() {
+                    console.log('SUCCESS');
+                }, function(error) {
+                    console.log('Faileed', error);
+            });
 
             // reset contactForm
             setContactForm({ ...contactForm,
@@ -71,7 +80,7 @@ function Contact() {
                     </Flex>
                 </Flex>
 
-                <form className="contact-form" onSubmit={handleSubmit}>
+                <form ref={form} className="contact-form" onSubmit={handleSubmit}>
                     <Input
                         placeholder="Name"
                         value={contactForm.name}

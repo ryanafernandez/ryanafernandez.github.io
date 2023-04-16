@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.28a3744f.css",
-    "main.js": "/static/js/main.b7a14181.js",
+    "main.css": "/static/css/main.afdc5bf5.css",
+    "main.js": "/static/js/main.ce3934fa.js",
     "static/media/hidden-gems-thumbnail.png": "/static/media/hidden-gems-thumbnail.dc217f59ea9be02c79a6.png",
     "static/media/about-placeholder.png": "/static/media/about-placeholder.c3befa19d509b7a7b1d0.png",
-    "static/media/Ryan-Fernandez-Resume.pdf": "/static/media/Ryan-Fernandez-Resume.1c7886e930cc20a2404c.pdf",
+    "static/media/Ryan-Fernandez-Resume.pdf": "/static/media/Ryan-Fernandez-Resume.380efa01c3f00aa333fc.pdf",
     "static/media/dbf-thumbnail.png": "/static/media/dbf-thumbnail.39aaa575aeee6c6c78e7.png",
     "static/media/chewby-thumbnail.png": "/static/media/chewby-thumbnail.cf5695fda5896f1c2ace.png",
     "index.html": "/index.html",
-    "main.28a3744f.css.map": "/static/css/main.28a3744f.css.map",
-    "main.b7a14181.js.map": "/static/js/main.b7a14181.js.map"
+    "main.afdc5bf5.css.map": "/static/css/main.afdc5bf5.css.map",
+    "main.ce3934fa.js.map": "/static/js/main.ce3934fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.28a3744f.css",
-    "static/js/main.b7a14181.js"
+    "static/css/main.afdc5bf5.css",
+    "static/js/main.ce3934fa.js"
   ]
 }

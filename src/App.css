@@ -114,12 +114,12 @@ p {
     font-size: 20px;
 }
 
-.nav-item a, #brand, #header-nav a, .socialsLinks a {
+.nav-item a, #brand, #header-nav a, .socialsLinks a, .headerContinue a, .project-links a {
     color: var(--nav-footer-text);
     text-decoration: none;
 }
 
-.nav-item a:hover, #brand:hover, #header-nav a:hover, .socialsLinks a:hover {
+.nav-item a:hover, #brand:hover, #header-nav a:hover, .socialsLinks a:hover, .headerContinue a:hover, .project-links a:hover {
     cursor: pointer;
     color: var(--nav-footer-hover);
     text-decoration: none;
